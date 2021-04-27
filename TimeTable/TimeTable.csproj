@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="abc.Designer.cs">
+      <DependentUpon>abc.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </Compile>
     <Compile Include="TimeTableClasses\Student.cs" />
     <Compile Include="TimeTableClasses\Tag.cs" />
+    <EmbeddedResource Include="abc.resx">
+      <DependentUpon>abc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
