@@ -70,6 +70,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeTableClasses\FormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeTableClasses\FormNew.Designer.cs">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </Compile>
     <Compile Include="TimeTableClasses\Student.cs" />
     <Compile Include="TimeTableClasses\Tag.cs" />
     <EmbeddedResource Include="AddStudent.resx">
@@ -90,6 +96,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TimeTableClasses\FormNew.resx">
+      <DependentUpon>FormNew.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
